@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".MainActivity">
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="30pt"-->
+<!--        android:layout_marginBottom="145dp"-->
+<!--        android:paddingStart="20dp"-->
+<!--        android:text="Public Services"-->
+<!--        android:textSize="12pt"-->
+<!--        android:textStyle="bold" />-->
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginVertical="30dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/hospital_building"
+            android:background="@drawable/img_bg"
+            android:paddingVertical="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:onClick="clickRS"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/police_station"
+            android:background="@drawable/img_bg"
+            android:paddingVertical="15dp"
+            android:layout_marginHorizontal="15dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_marginVertical="20dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/store"
+            android:background="@drawable/img_bg"
+            android:paddingVertical="15dp"
+            android:layout_marginHorizontal="15dp"/>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/school"
+            android:background="@drawable/img_bg"
+            android:paddingVertical="15dp"
+            android:layout_marginHorizontal="15dp"/>
+    </TableRow>
+
+</LinearLayout>
